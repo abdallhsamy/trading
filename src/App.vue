@@ -1,5 +1,6 @@
 <script setup>
 import OrderBook from './components/OrderBook.vue'
+import CenterChart from './components/CenterChart.vue'
 </script>
 
 <template>
@@ -18,7 +19,9 @@ import OrderBook from './components/OrderBook.vue'
       </div>
 
       <!-- center area  -->
-      <div class="col-span-6">center</div>
+      <div class="col-span-6">
+          <CenterChart/>
+      </div>
 
       <!-- right-area  -->
       <div class="col-span-3">right</div>
