@@ -1,34 +1,44 @@
 <script setup>
+import CoinPriceList from './components/CoinPriceList.vue'
 import OrderBook from './components/OrderBook.vue'
 import CenterChart from './components/CenterChart.vue'
 import TopBar from "./components/TopBar.vue";
+import RightSearch from "./components/RightSearch.vue";
 </script>
 
 <template>
   <div class="dark:bg-slate-800 dark:text-white">
+      <div class=" mx-20">
 
-    <div class="grid grid-cols-12">
-      <!-- bars -->
-      <div class="col-span-12 grid grid-cols-12">
-        <div class="col-span-9">
-            <TopBar/>
-        </div>
-        <div class="col-span-3">search</div>
+          <div class="grid grid-cols-12">
+              <!-- bars -->
+              <div class="col-span-12 grid grid-cols-12">
+                  <div class="col-span-9">
+                      <TopBar/>
+                  </div>
+                  <div class="col-span-3">
+                      <RightSearch/>
+                  </div>
+              </div>
+
+              <!-- left area  -->
+              <div class="col-span-3 ">
+                  <OrderBook/>
+              </div>
+
+              <!-- center area  -->
+              <div class="col-span-6">
+                            <CenterChart/>
+              </div>
+
+              <!-- right-area  -->
+              <div class="col-span-3">
+                  <!--          right-->
+                  <CoinPriceList />
+              </div>
+          </div>
       </div>
 
-      <!-- left area  -->
-      <div class="col-span-3 ">
-      <OrderBook/>
-      </div>
-
-      <!-- center area  -->
-      <div class="col-span-6">
-          <CenterChart/>
-      </div>
-
-      <!-- right-area  -->
-      <div class="col-span-3">right</div>
-    </div>
   </div>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
