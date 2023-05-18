@@ -1,6 +1,7 @@
 <script setup>
 import OrderBook from './components/OrderBook.vue'
 import CenterChart from './components/CenterChart.vue'
+import TopBar from "./components/TopBar.vue";
 </script>
 
 <template>
@@ -9,7 +10,9 @@ import CenterChart from './components/CenterChart.vue'
     <div class="grid grid-cols-12">
       <!-- bars -->
       <div class="col-span-12 grid grid-cols-12">
-        <div class="col-span-9">bar</div>
+        <div class="col-span-9">
+            <TopBar/>
+        </div>
         <div class="col-span-3">search</div>
       </div>
 
