@@ -44,6 +44,27 @@
 
 
 
+
+        <div class="border border-slate-500 px-5 pt-5">
+            <div class="font-bold text-yellow-300">Market Trades</div>
+            <table class="table-auto  w-full text-left">
+                <thead>
+                <tr>
+                    <th>Price (USDT)</th>
+                    <th>Amount (BTC)</th>
+                    <th class="text-right">Time</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="item in marketTrades">
+                    <td class="text-green-300">{{ item.price }}</td>
+                    <td class="text-gray-400">{{ item.amount }}</td>
+                    <td class="text-gray-400 text-right">{{ item.time }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
 </template>
 
@@ -136,6 +157,100 @@ const pairPrices = ref([
         }
     ]
 );
+
+const marketTrades = ref([
+        {
+            "price": "27,384.37",
+            "amount": "0.00200",
+            "time": "13:38:36"
+        },
+        {
+            "price": "27,384.37",
+            "amount": "0.00105",
+            "time": "13:38:36"
+        },
+        {
+            "price": "27,384.38",
+            "amount": "0.00174",
+            "time": "13:38:35"
+        },
+        {
+            "price": "27,384.38",
+            "amount": "0.02391",
+            "time": "13:38:35"
+        },
+        {
+            "price": "27,384.38",
+            "amount": "0.00157",
+            "time": "13:38:34"
+        },
+        {
+            "price": "27,384.38",
+            "amount": "0.00095",
+            "time": "13:38:33"
+        },
+        {
+            "price": "27,384.37",
+            "amount": "0.00336",
+            "time": "13:38:33"
+        },
+        {
+            "price": "27,384.38",
+            "amount": "0.06656",
+            "time": "13:38:33"
+        },
+        {
+            "price": "27,384.38",
+            "amount": "0.00036",
+            "time": "13:38:32"
+        },
+        {
+            "price": "27,384.37",
+            "amount": "0.00195",
+            "time": "13:38:32"
+        },
+        {
+            "price": "27,384.37",
+            "amount": "0.00144",
+            "time": "13:38:32"
+        },
+        {
+            "price": "27,384.37",
+            "amount": "0.00177",
+            "time": "13:38:32"
+        },
+        {
+            "price": "27,384.37",
+            "amount": "0.00196",
+            "time": "13:38:30"
+        },
+        {
+            "price": "27,384.38",
+            "amount": "0.44286",
+            "time": "13:38:30"
+        },
+        {
+            "price": "27,384.37",
+            "amount": "0.02870",
+            "time": "13:38:30"
+        },
+        {
+            "price": "27,384.38",
+            "amount": "0.00479",
+            "time": "13:38:30"
+        },
+        {
+            "price": "27,384.37",
+            "amount": "0.00544",
+            "time": "13:38:29"
+        },
+        {
+            "price": "27,384.38",
+            "amount": "0.00749",
+            "time": "13:38:29"
+        }
+    ]
+)
 
 </script>
 

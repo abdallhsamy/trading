@@ -28,7 +28,7 @@ import RightSearch from "./components/RightSearch.vue";
 
               <!-- center area  -->
               <div class="col-span-6">
-                            <CenterChart/>
+                  <CenterChart/>
               </div>
 
               <!-- right-area  -->
