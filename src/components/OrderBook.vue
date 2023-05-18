@@ -2,8 +2,8 @@
 <template>
 <div class="text-sm">
 
-    <div class="border border-slate-500">
-        <table class="table-auto mx-5 my-1">
+    <div class="border border-slate-500 px-5 py-1">
+        <table class="table-auto  w-full text-left">
             <thead>
             <tr>
                 <th>Price(USDT)</th>
@@ -13,7 +13,7 @@
             </thead>
             <tbody>
             <tr v-for="item in sellItems">
-                <td class="text-red-700">{{ item.price }}</td>
+                <td  class="text-red-700">{{ item.price }}</td>
                 <td class="text-gray-300">{{ item.amount }}</td>
                 <td class="text-gray-300 text-right">{{ item.total }}</td>
             </tr>
@@ -21,8 +21,8 @@
         </table>
     </div>
 
-    <div class="border border-slate-500	 ">
-    <table class="table-auto mx-5 my-1">
+    <div class="border border-slate-500	px-5 py-1">
+    <table class="table-auto  w-full text-left">
         <thead>
         <tr>
             <th >27400.01</th>
