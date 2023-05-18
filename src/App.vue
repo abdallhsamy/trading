@@ -4,14 +4,31 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
+    <!-- <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    </a> -->
+
+    <div class="grid grid-cols-12">
+      <!-- bars -->
+      <div class="col-span-12 grid grid-cols-12">
+        <div class="col-span-9">bar</div>
+        <div class="col-span-3">search</div>
+      </div>
+
+      <!-- left area  -->
+      <div class="col-span-3">left area</div>
+
+      <!-- center area  -->
+      <div class="col-span-6">center</div>
+
+      <!-- right-area  -->
+      <div class="col-span-3">right</div>
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
 <style scoped>
